@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form input</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Input Tag</legend>
+        <ul>
+          <li>
+            <label for="email">이메일</label>
+            <input type="text" id="email" required />
+          </li>
+          <li>
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" />
+          </li>
+          <li>
+            <label for="url">주소</label>
+            <input type="url" id="url" />
+          </li>
+          <li>
+            <label for="range">range</label>
+            <input type="range" id="range" min="0" max="10" />
+          </li>
+          <li>파일 제출<input type="submit" value="제출하기" multiple /></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>날짜관련</legend>
+        <ul>
+          <li>
+            <label for="date">date</label>
+            <input type="date" id="date" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>시간관련</legend>
+        <ul>
+          <li>
+            <label for="time">time</label>
+            <input type="time" id="time" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>그외</legend>
+        <ul>
+          <li><input type="file" /></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>주문상품 선택</legend>
+        <li>
+          <select name="goods" id="goods">
+            <option value="10kg">사과 10kg</option>
+            <option value="20kg" selected>사과 20kg</option>
+            <option value="30kg">사과 30kg</option>
+            <option value="40kg">사과 40kg</option>
+            <option value="50kg">사과 50kg</option>
+          </select>
+        </li>
+        <li>
+          <label for="ice-cream-choice">맛을 선택하세요</label>
+          <input
+            list="ice-cream-flavors"
+            id="ice-cream-choice"
+            name="ice-cream-choice"
+          />
+          <datalist id="ice-cream-flavors">
+            <option value="Chocolate"></option>
+            <option value="Coconut"></option>
+            <option value="Mint"></option>
+            <option value="Strawberry"></option>
+            <option value="Vanilla"></option>
+          </datalist>
+        </li>
+      </fieldset>
+
+      <button type="summit">제출하기</button>
+      <button type="reset">초기화</button>
+      <button type="button" onclick="alert('Hello World')">버튼</button>
+
+      <!-- 그외 checkbox, radio(name 통일시켜야 함)-->
+      <!-- TextArea : 여러줄 입력 받을 수 있음 / 속성 : rows, cols-->
+      <!-- TextArea : 여러줄 입력 받을 수 있음 -->
+    </form>
+  </body>
+</html>
