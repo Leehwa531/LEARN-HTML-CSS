@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style 1</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&display=swap');
+
+      .nanum-pen-script-regular {
+        font-family: 'Nanum Pen Script', cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .title {
+        font-size: 28px;
+      }
+      .content {
+        font-size: 18px;
+      }
+      .font-italic {
+        font-style: italic;
+      }
+      .font-weight-bold {
+        font-weight: bold;
+      }
+      .font-weight-300 {
+        font-weight: 300;
+      }
+      .font-variant {
+        font-variant: small-caps;
+      }
+      .subtitle {
+        font-size: 25px;
+      }
+      .subtitle-rem {
+        font-size: 2rem;
+      }
+      .subtitle-em {
+        font-size: 2em;
+      }
+      .rectangle.width {
+        width: 20vw;
+        height: 100px;
+        background-color: grey;
+      }
+      .rectangle.height {
+        height: 20vh;
+        width: 100px;
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title nanum-pen-script-regular">유튜브 박정훈 나이쓰으응!</h2>
+    <p class="content nanum-pen-script-regular">
+      연습용이지 실제로 유튜브를 하진 않습니다.
+    </p>
+    <p class="content font-italic nanum-pen-script-regular">
+      연습용이지 실제로 유튜브를 하진 않습니다.
+    </p>
+    <p class="content font-weight-bold nanum-pen-script-regular">
+      연습용이지 실제로 유튜브를 하진 않습니다.
+    </p>
+    <p class="content font-weight-300 nanum-pen-script-regular">
+      연습용이지 실제로 유튜브를 하진 않습니다.
+    </p>
+    <p class="content font-variant nanum-pen-script-regular">Hello park, jh</p>
+
+    <hr />
+    <h2>px</h2>
+    <p class="subtitle">연습용이지 실제로 유튜브를 하진 않습니다.</p>
+    <h2>rem</h2>
+    <p class="subtitle-rem">연습용이지 실제로 유튜브를 하진 않습니다.</p>
+    <h2>em</h2>
+    <p class="subtitle-em">연습용이지 실제로 유튜브를 하진 않습니다.</p>
+    <hr />
+    <h2>vw</h2>
+    <!-- viewport width의 약어 -->
+    <div class="rectangle width"></div>
+
+    <h2>vh</h2>
+    <!-- viewport height의 약어 -->
+    <div class="rectangle height"></div>
+  </body>
+</html>
