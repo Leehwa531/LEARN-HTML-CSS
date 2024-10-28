@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      .red {
+        background-color: red;
+        width: 120px;
+        height: 120px;
+      }
+      .image {
+        background-image: url('./assets/pattern.jpg');
+        /* background-repeat: no-repeat; */
+        background-position-y: bottom;
+        background-position-x: center;
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        overflow-y: scroll;
+      }
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      .attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        width: 300px;
+        height: 300px;
+        background-image: url('./assets/football.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to right, red, blue 30%, green);
+      }
+      .rdial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(white, yellow);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+      <h4>scroll</h4>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ipsam
+      molestias quis enim earum recusandae! Laboriosam ipsam consequuntur quos
+      repellendus modi blanditiis odio, alias voluptates vitae quaerat
+      reprehenderit explicabo illum. Aperiam, dolores doloremque molestiae vero
+      labore nam consectetur velit repellendus necessitatibus ullam voluptatem
+      at quae numquam dignissimos veniam debitis eaque vitae similique tempore
+      molestias! Ad accusamus tenetur dolorum ut vel? Fugiat eum reprehenderit
+      obcaecati atque animi iure facilis quis earum vero in velit assumenda
+      repellendus ex natus alias aspernatur vel tempore placeat dolores cumque,
+      ab at! Facilis optio aut labore. Similique ad aliquid minima deserunt unde
+      laboriosam repudiandae ea assumenda provident! Asperiores ratione delectus
+      itaque veritatis totam maxime et quis, officiis culpa pariatur rem iste
+      amet molestias ipsam mollitia non. Soluta quae id asperiores esse commodi
+      quod cumque quisquam ab. Natus nihil doloribus sunt ab, pariatur quaerat
+      error! Quisquam nam quam ut aliquam inventore sint odio? Quos earum quas
+      architecto? Officia qui, illo hic, ratione reprehenderit nemo doloribus
+      sequi inventore maxime rerum ipsum natus voluptates, deserunt pariatur
+      perferendis magnam iusto earum sit totam? Architecto rem aliquam aperiam
+      enim, veritatis nisi! Amet, minus, qui nostrum corporis rerum soluta
+      provident ullam sit aliquam aspernatur facilis commodi iusto repellat!
+      Dolor consequatur culpa adipisci maiores earum exercitationem illo quia
+      quaerat. Veniam tempora aliquam quod. Accusantium velit at assumenda
+      reprehenderit labore, atque dolor a, iste iusto consequuntur, fugit
+      pariatur expedita mollitia quidem voluptatum nobis nesciunt! Animi
+      consectetur ex, hic pariatur inventore explicabo blanditiis sequi modi.
+    </div>
+    <div class="image attachment-fixed">
+      <h4>fixed</h4>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ipsam
+      molestias quis enim earum recusandae! Laboriosam ipsam consequuntur quos
+      repellendus modi blanditiis odio, alias voluptates vitae quaerat
+      reprehenderit explicabo illum. Aperiam, dolores doloremque molestiae vero
+      labore nam consectetur velit repellendus necessitatibus ullam voluptatem
+      at quae numquam dignissimos veniam debitis eaque vitae similique tempore
+      molestias! Ad accusamus tenetur dolorum ut vel? Fugiat eum reprehenderit
+      obcaecati atque animi iure facilis quis earum vero in velit assumenda
+      repellendus ex natus alias aspernatur vel tempore placeat dolores cumque,
+      ab at! Facilis optio aut labore. Similique ad aliquid minima deserunt unde
+      laboriosam repudiandae ea assumenda provident! Asperiores ratione delectus
+      itaque veritatis totam maxime et quis, officiis culpa pariatur rem iste
+      amet molestias ipsam mollitia non. Soluta quae id asperiores esse commodi
+      quod cumque quisquam ab. Natus nihil doloribus sunt ab, pariatur quaerat
+      error! Quisquam nam quam ut aliquam inventore sint odio? Quos earum quas
+      architecto? Officia qui, illo hic, ratione reprehenderit nemo doloribus
+      sequi inventore maxime rerum ipsum natus voluptates, deserunt pariatur
+      perferendis magnam iusto earum sit totam? Architecto rem aliquam aperiam
+      enim, veritatis nisi! Amet, minus, qui nostrum corporis rerum soluta
+      provident ullam sit aliquam aspernatur facilis commodi iusto repellat!
+      Dolor consequatur culpa adipisci maiores earum exercitationem illo quia
+      quaerat. Veniam tempora aliquam quod. Accusantium velit at assumenda
+      reprehenderit labore, atque dolor a, iste iusto consequuntur, fugit
+      pariatur expedita mollitia quidem voluptatum nobis nesciunt! Animi
+      consectetur ex, hic pariatur inventore explicabo blanditiis sequi modi.
+    </div>
+    <div class="image attachment-local">
+      <h4>local</h4>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ipsam
+      molestias quis enim earum recusandae! Laboriosam ipsam consequuntur quos
+      repellendus modi blanditiis odio, alias voluptates vitae quaerat
+      reprehenderit explicabo illum. Aperiam, dolores doloremque molestiae vero
+      labore nam consectetur velit repellendus necessitatibus ullam voluptatem
+      at quae numquam dignissimos veniam debitis eaque vitae similique tempore
+      molestias! Ad accusamus tenetur dolorum ut vel? Fugiat eum reprehenderit
+      obcaecati atque animi iure facilis quis earum vero in velit assumenda
+      repellendus ex natus alias aspernatur vel tempore placeat dolores cumque,
+      ab at! Facilis optio aut labore. Similique ad aliquid minima deserunt unde
+      laboriosam repudiandae ea assumenda provident! Asperiores ratione delectus
+      itaque veritatis totam maxime et quis, officiis culpa pariatur rem iste
+      amet molestias ipsam mollitia non. Soluta quae id asperiores esse commodi
+      quod cumque quisquam ab. Natus nihil doloribus sunt ab, pariatur quaerat
+      error! Quisquam nam quam ut aliquam inventore sint odio? Quos earum quas
+      architecto? Officia qui, illo hic, ratione reprehenderit nemo doloribus
+      sequi inventore maxime rerum ipsum natus voluptates, deserunt pariatur
+      perferendis magnam iusto earum sit totam? Architecto rem aliquam aperiam
+      enim, veritatis nisi! Amet, minus, qui nostrum corporis rerum soluta
+      provident ullam sit aliquam aspernatur facilis commodi iusto repellat!
+      Dolor consequatur culpa adipisci maiores earum exercitationem illo quia
+      quaerat. Veniam tempora aliquam quod. Accusantium velit at assumenda
+      reprehenderit labore, atque dolor a, iste iusto consequuntur, fugit
+      pariatur expedita mollitia quidem voluptatum nobis nesciunt! Animi
+      consectetur ex, hic pariatur inventore explicabo blanditiis sequi modi.
+    </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>rdial-gradient</h3>
+    <div class="rdial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>
