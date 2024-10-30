@@ -39,6 +39,39 @@
       li:not(.target){
         font-size: 30px;
       }
+
+      /* 가상 요소 */
+.required::before {
+  content: '*';
+  margin-right: 2px;
+  color: red;
+  font-size: 18px;
+}
+[data-tooltip]{
+  position: relative;
+}
+[data-tooltip]:hover::after{
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  background-color: black;
+  color: white;
+  width: 200px;
+}
+.letter::first-letter{
+  font-size: 60px;
+  color: blue;
+}
+.line::first-line{
+  background-color: yellow;
+  color: blue;
+  font-size: 20px;
+}
+p::selection{
+  background-color: red;
+  color: white;
+}
     </style>
   </head>
   <body>
@@ -52,15 +85,16 @@
     <fieldset>
       <legend>focus, before, after</legend>
       <div class="field">
-        <label for="name">이름</label>
+        <label class="required" for="name">이름</label>
         <input for="text" id="name"></input>
       </div>
       <div class="field">
-        <label for="age">나이</label>
+        <label class="required" for="age">나이</label>
         <input for="text" id="age"></input>
       </div>
-      <button>보내기</button>
+      <button data-tooltip="이 버튼을 클릭하여 정보를 보내세요.">보내기</button>
     </fieldset>
+
     <fieldset>
       <legend>nth-child, not</legend>
       <ul>
@@ -71,5 +105,17 @@
         <li>5content</li>
       </ul>
     </fieldset>
+    <fieldset>first-letter, first-line, section
+    <div>
+      <p class="letter">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero minima quam ducimus, iure itaque ratione deserunt repellat dolorum, a aperiam hic, dolorem laudantium! Cum temporibus ipsam fuga maiores cumque error.
+        Itaque provident iusto incidunt minus sed blanditiis a et neque fuga accusamus exercitationem, deserunt perferendis? Nobis non laudantium numquam dolorum molestiae quaerat repellat error, quisquam ab, laborum praesentium tempore quasi.
+      </p>
+      <p class="line">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, velit? Rem, libero. Nemo cumque rerum error! Perspiciatis, amet. Vitae laudantium quia odio at sint officia dicta, iste doloribus iure facilis!
+        Repellendus ratione harum aliquid alias quia officia fugit odit molestias fugiat maiores, et quas ipsa laborum? Eaque nulla id tenetur quisquam iusto illum, eum omnis quis, deleniti tempore deserunt recusandae.
+      </p>
+    </div>
+  </fieldset>
   </body>
 </html>
